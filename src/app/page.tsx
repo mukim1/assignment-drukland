@@ -51,7 +51,7 @@ export default function Home() {
 
       {/* Main header */}
       <header className="bg-white py-3 border-b border-gray-400 text-gray-900">
-        <div className="container mx-auto flex items-center justify-between">
+        <div className="container mx-auto flex items-center justify-between px-2">
           <Link href="/" className="text-2xl lg:text-3xl font-bold text-black">
             Drukland.de
           </Link>
