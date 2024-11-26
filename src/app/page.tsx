@@ -17,7 +17,7 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50">
       {/* Top utility bar */}
       <div className="bg-gray-100 py-2">
-        <div className="container mx-auto flex justify-end space-x-5 text-sm text-gray-600">
+        <div className="container mx-auto flex justify-end space-x-5 text-sm text-gray-600 px-2">
           <Link
             href="/faq"
             className="hover:text-gray-900 flex items-center gap-1"
@@ -102,7 +102,7 @@ export default function Home() {
       </header>
 
       {/* Main content */}
-      <main className="container mx-auto my-12 flex flex-col lg:flex-row lg:space-x-12 max-md:px-2">
+      <main className="container mx-auto my-12 flex flex-col lg:flex-row lg:space-x-12 px-2">
         {/* Service showcase */}
         <div className="flex-1 rounded-lg bg-white p-8 shadow-md">
           <div className="flex h-96 items-center justify-center text-gray-500 text-xl lg:text-2xl font-light">
@@ -137,7 +137,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="mt-auto border-t border-gray-200 py-6 container mx-auto max-md:px-2 h-min">
+      <footer className="mt-auto border-t border-gray-200 py-6 container mx-auto px-2 h-min">
         <div className="flex flex-col items-center justify-between space-y-4 text-sm text-gray-600 md:flex-row md:space-y-0">
           <div>All rights reserved © 2024 | Drukland.de</div>
           <div className="flex space-x-4">
