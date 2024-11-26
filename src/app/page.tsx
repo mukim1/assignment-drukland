@@ -1,5 +1,15 @@
 import Link from "next/link";
-import { ChevronDown, Search, ShoppingBasket, Truck, User } from "lucide-react";
+import {
+  ChevronDown,
+  HelpCircle,
+  Mail,
+  MessageCircleMore,
+  Search,
+  ShoppingBasket,
+  SquareUser,
+  Truck,
+  User,
+} from "lucide-react";
 import Form from "./form";
 
 export default function Home() {
@@ -7,24 +17,40 @@ export default function Home() {
     <div className="min-h-screen bg-gray-50">
       {/* Top utility bar */}
       <div className="bg-gray-100 py-2">
-        <div className="container mx-auto flex justify-end space-x-4 text-sm text-gray-600">
-          <Link href="/faq" className="hover:text-gray-900">
-            FAQ
+        <div className="container mx-auto flex justify-end space-x-5 text-sm text-gray-600">
+          <Link
+            href="/faq"
+            className="hover:text-gray-900 flex items-center gap-1"
+          >
+            <span> FAQ</span>
+            <HelpCircle size={16} />
           </Link>
-          <Link href="/inquiry" className="hover:text-gray-900">
-            Send Inquiry
+          <Link
+            href="/inquiry"
+            className="hover:text-gray-900 flex items-center gap-1"
+          >
+            <span>Send Inquiry</span>
+            <Mail size={16} />
           </Link>
-          <Link href="/support" className="hover:text-gray-900">
-            Live Support
+          <Link
+            href="/support"
+            className="hover:text-gray-900 flex items-center gap-1"
+          >
+            <span>Live Support</span>
+            <MessageCircleMore size={16} />
           </Link>
-          <Link href="/contact" className="hover:text-gray-900">
-            Contact
+          <Link
+            href="/contact"
+            className="hover:text-gray-900 flex items-center gap-1"
+          >
+            <span>Contact</span>
+            <SquareUser size={16} />
           </Link>
         </div>
       </div>
 
       {/* Main header */}
-      <header className="bg-white py-3 border-b border-gray-400 text-gray-600">
+      <header className="bg-white py-3 border-b border-gray-400 text-gray-900">
         <div className="container mx-auto flex items-center justify-between">
           <Link href="/" className="text-2xl lg:text-3xl font-bold text-black">
             Drukland.de
